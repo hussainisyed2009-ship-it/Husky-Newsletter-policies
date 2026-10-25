@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morgan Newsletter — Legal Documentation</title>
+  <meta name="description" content="Official Terms of Service and Privacy Policy for the Morgan Newsletter community app, serving The Morgan School and Clinton, CT 06413.">
+  <meta name="theme-color" content="#253971">
+  <style>
+    :root {
+      --primary: #253971;
+      --primary-hover: #1c2b55;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-subtle: #f1f5f9;
+      --border: #e2e8f0;
+      --border-subtle: #cbd5e1;
+      --text: #334155;
+      --text-heading: #0f172a;
+      --text-muted: #64748b;
+      --callout-bg: #f8fafc;
+      --callout-border: #cbd5e1;
+      --danger-bg: #fef2f2;
+      --danger-border: #fecaca;
+      --danger-text: #991b1b;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --primary: #818cf8;
+      --primary-hover: #a5b4fc;
+      --bg: #0b0f19;
+      --surface: #111827;
+      --surface-subtle: #1f2937;
+      --border: #1f2937;
+      --border-subtle: #374151;
+      --text: #cbd5e1;
+      --text-heading: #f8fafc;
+      --text-muted: #94a3b8;
+      --callout-bg: #131c2e;
+      --callout-border: #1e293b;
+      --danger-bg: #2b1317;
+      --danger-border: #4c1d24;
+      --danger-text: #fca5a5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    /* Masthead Header */
+    header.site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav-container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-institution {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      line-height: 1.2;
+    }
+
+    .brand-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-heading);
+      letter-spacing: -0.2px;
+      line-height: 1.2;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-control {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: inherit;
+      transition: all 0.15s ease;
+    }
+
+    .btn-control:hover {
+      background: var(--surface-subtle);
+      border-color: var(--border-subtle);
+      color: var(--text-heading);
+    }
+
+    /* Subheader Hero */
+    .portal-hero {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 24px 20px;
+      text-align: center;
+    }
+
+    .portal-hero-inner {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .portal-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-heading);
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+
+    .portal-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    /* Segmented Tab Control */
+    .tab-bar-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .tab-bar {
+      display: inline-flex;
+      background: var(--surface-subtle);
+      padding: 3px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      gap: 2px;
+    }
+
+    .tab-btn {
+      padding: 7px 16px;
+      border-radius: 6px;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-heading);
+    }
+
+    .tab-btn.active {
+      background: var(--surface);
+      color: var(--text-heading);
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    .quick-links-bar {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .quick-links-bar a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .quick-links-bar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Layout */
+    .portal-container {
+      max-width: 1040px;
+      margin: 32px auto 64px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 36px;
+      align-items: start;
+    }
+
+    @media (max-width: 860px) {
+      .portal-container {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        gap: 24px;
+        padding: 0 16px;
+      }
+    }
+
+    /* Sticky Sidebar Navigation */
+    .sidebar {
+      position: sticky;
+      top: 80px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    @media (max-width: 860px) {
+      .sidebar {
+        position: relative;
+        top: 0;
+      }
+    }
+
+    .sidebar h2 {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .toc-item a {
+      display: block;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      padding: 6px 8px;
+      border-radius: 4px;
+      transition: color 0.15s, background-color 0.15s;
+      line-height: 1.4;
+    }
+
+    .toc-item a:hover {
+      background-color: var(--surface-subtle);
+      color: var(--text-heading);
+    }
+
+    .sidebar-card {
+      margin-top: 18px;
+      padding: 14px;
+      background: var(--surface-subtle);
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      font-size: 12px;
+      min-width: 0;
+    }
+
+    .sidebar-card h3 {
+      font-size: 12px;
+      color: var(--text-heading);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .sidebar-card p {
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 6px;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .sidebar-card a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .sidebar-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Content Area */
+    .content-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 36px 40px;
+    }
+
+    @media (max-width: 640px) {
+      .content-card {
+        padding: 24px 18px;
+      }
+    }
+
+    .tab-pane {
+      display: none;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    .doc-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+
+    .doc-pretitle {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .doc-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text-heading);
+      letter-spacing: -0.4px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .doc-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .executive-summary {
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+    }
+
+    .executive-summary h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-bottom: 8px;
+    }
+
+    .executive-summary p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text);
+      margin-bottom: 0;
+    }
+
+    section.doc-section {
+      margin-bottom: 34px;
+      scroll-margin-top: 80px;
+    }
+
+    .section-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-bottom: 12px;
+      letter-spacing: -0.2px;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .section-num {
+      color: var(--text-muted);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text);
+      font-size: 14.5px;
+      line-height: 1.65;
+    }
+
+    ul, ol {
+      margin-bottom: 16px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+
+    li strong {
+      color: var(--text-heading);
+    }
+
+    .notice-box {
+      background: var(--callout-bg);
+      border: 1px solid var(--callout-border);
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .notice-box.danger {
+      background: var(--danger-bg);
+      border-color: var(--danger-border);
+      color: var(--danger-text);
+    }
+
+    .notice-box.danger strong {
+      color: var(--danger-text);
+    }
+
+    /* Structured Table */
+    .table-responsive {
+      overflow-x: auto;
+      margin: 18px 0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13.5px;
+    }
+
+    th {
+      background-color: var(--surface-subtle);
+      color: var(--text-heading);
+      font-weight: 700;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Contact Details Grid with robust overflow protection */
+    .contact-container {
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .contact-block {
+      min-width: 0; /* Prevents long string blowout */
+    }
+
+    .contact-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .contact-value {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-heading);
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .contact-value a {
+      color: var(--primary);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .contact-value a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      margin-top: 48px;
+      padding: 28px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media print {
+      header.site-header, .portal-hero, .sidebar, footer.site-footer, .btn-control {
+        display: none !important;
+      }
+      .portal-container {
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .content-card {
+        border: none;
+        padding: 0;
+      }
+      .tab-pane {
+        display: block !important;
+      }
+      .tab-pane + .tab-pane {
+        page-break-before: always;
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid #ccc;
+      }
+      body {
+        background: #ffffff;
+        color: #000000;
+        font-size: 11pt;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Masthead Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <span class="brand-institution">The Morgan School</span>
+        <span class="brand-title">Morgan Newsletter</span>
+      </a>
+      <div class="nav-actions">
+        <button id="printBtn" class="btn-control" type="button">Print Document</button>
+        <button id="themeToggle" class="btn-control" type="button">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero & Segmented Tabs -->
+  <div class="portal-hero">
+    <div class="portal-hero-inner">
+      <h1 class="portal-title">Morgan Newsletter Legal Portal</h1>
+      <p class="portal-subtitle">
+        Community standards, school content policies, and data security disclosures for The Morgan School in Clinton, CT.
+      </p>
+
+      <div class="tab-bar-container">
+        <div class="tab-bar" role="tablist">
+          <button class="tab-btn active" id="btn-terms" onclick="switchTab('terms')">Terms of Service</button>
+          <button class="tab-btn" id="btn-privacy" onclick="switchTab('privacy')">Privacy Policy</button>
+          <button class="tab-btn" id="btn-both" onclick="switchTab('both')">View Both</button>
+        </div>
+      </div>
+
+      <div class="quick-links-bar">
+        <span>Direct standalone pages:</span>
+        <a href="terms.html">terms.html</a>
+        <span>•</span>
+        <a href="privacy.html">privacy.html</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="portal-container">
+    
+    <!-- Dynamic Sidebar -->
+    <aside class="sidebar">
+      <div id="sidebar-terms-nav">
+        <h2>Terms Sections</h2>
+        <ul class="toc-list">
+          <li class="toc-item"><a href="#terms-description">1. App Description &amp; Access</a></li>
+          <li class="toc-item"><a href="#terms-eligibility">2. User Eligibility &amp; Minors</a></li>
+          <li class="toc-item"><a href="#terms-accounts">3. User Accounts &amp; Security</a></li>
+          <li class="toc-item"><a href="#terms-acceptable-use">4. Acceptable Use Policy</a></li>
+          <li class="toc-item"><a href="#terms-ip">5. Intellectual Property &amp; AI</a></li>
+          <li class="toc-item"><a href="#terms-ugc">6. User-Generated Content</a></li>
+          <li class="toc-item"><a href="#terms-payments">7. Payments &amp; Subscriptions</a></li>
+          <li class="toc-item"><a href="#terms-liability">8. Disclaimer &amp; Liability</a></li>
+          <li class="toc-item"><a href="#terms-changes">9. Modifications to Terms</a></li>
+          <li class="toc-item"><a href="#terms-governing-law">10. Governing Law</a></li>
+          <li class="toc-item"><a href="#terms-contact">11. Contact &amp; Support</a></li>
+        </ul>
+      </div>
+
+      <div id="sidebar-privacy-nav" style="display: none; margin-top: 18px;">
+        <h2>Privacy Sections</h2>
+        <ul class="toc-list">
+          <li class="toc-item"><a href="#priv-commitment">1. Privacy Commitment</a></li>
+          <li class="toc-item"><a href="#priv-data">2. Information Collected</a></li>
+          <li class="toc-item"><a href="#priv-not-collected">3. What We Do NOT Collect</a></li>
+          <li class="toc-item"><a href="#priv-use">4. How We Use Data</a></li>
+          <li class="toc-item"><a href="#priv-security">5. Cloud Storage (AWS/Supabase)</a></li>
+          <li class="toc-item"><a href="#priv-providers">6. Third-Party Infrastructure</a></li>
+          <li class="toc-item"><a href="#priv-children">7. Student Privacy &amp; COPPA</a></li>
+          <li class="toc-item"><a href="#priv-rights">8. User Rights &amp; Deletion</a></li>
+          <li class="toc-item"><a href="#priv-updates">9. Policy Modifications</a></li>
+          <li class="toc-item"><a href="#priv-contact">10. Contact Information</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>The Morgan School</h3>
+        <p>71 Killingworth Turnpike<br>Clinton, CT 06413</p>
+        <p>Support: <a href="mailto:Hussainisyed2009@gmail.com">Hussainisyed2009@gmail.com</a></p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-card">
+      
+      <!-- TAB 1: TERMS OF SERVICE -->
+      <div id="pane-terms" class="tab-pane active">
+        <div class="doc-header">
+          <div class="doc-pretitle">The Morgan School • Official Policy</div>
+          <h2 class="doc-title">Terms of Service &amp; Conditions</h2>
+          <div class="doc-meta">
+            <span><strong>Effective Date:</strong> October 25, 2026</span>
+            <span><strong>Build:</strong> Version 1.2.0 (Alpha)</span>
+            <span><strong>Jurisdiction:</strong> Clinton, CT 06413</span>
+          </div>
+        </div>
+
+        <div class="executive-summary">
+          <h3>Overview</h3>
+          <p>
+            The Morgan Newsletter application is a dedicated school communication and sports reporting platform for The Morgan School in Clinton, Connecticut. By default, newly created accounts have view-only access to browse articles, school news, and sports scores. Posting or reporting privileges require an approved in-app access request. Feeds are faculty-monitored, the service is free, automated scraping and reverse engineering are strictly prohibited, and school administration reserves the right to moderate or restrict accounts for policy violations.
+          </p>
+        </div>
+
+        <!-- Section 1 -->
+        <section id="terms-description" class="doc-section">
+          <h3 class="section-title"><span class="section-num">1.</span> App Description &amp; Scope of Service</h3>
+          <p>
+            The <strong>Morgan Newsletter</strong> mobile application is an official school community platform created for <strong>The Morgan School</strong> in Clinton, Connecticut, actively developed in collaboration with the <strong>Morgan Research Club</strong>. The application centralizes sports reporting, athletic scoreboard tracking, student articles, faculty announcements, and community updates.
+          </p>
+          <p>
+            <strong>Tiered Feature &amp; Permission Structure:</strong> Standard accounts initially receive read-only privileges. Users can view published articles, read social feed posts, monitor game scorecards, and interact via likes and follows. General users cannot author or publish posts, articles, or athletic scorecards without verified administrator authorization.
+          </p>
+          <div class="notice-box">
+            <strong>Requesting Contributor Access:</strong> Users seeking posting permissions or athletic reporting privileges must submit a formal request within the application under <em>Settings &gt; Request Access For Posting/Sports</em>. Submitting a request does not guarantee approval; permissions are granted at the sole discretion of school administration and designated faculty advisors.
+          </div>
+          <p>
+            <strong>Administrative Authority:</strong> The Morgan School and authorized faculty administrators retain the full right to suspend, restrict, ban, or terminate any user’s access—in whole or in part—at any time, with or without prior notice, for conduct deemed detrimental to the school environment.
+          </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="terms-eligibility" class="doc-section">
+          <h3 class="section-title"><span class="section-num">2.</span> User Eligibility &amp; Minor Safety (COPPA Compliance)</h3>
+          <p>
+            <strong>Geographic &amp; Community Scope:</strong> This application is intended specifically for residents of <strong>Clinton, Connecticut (ZIP Code 06413)</strong>, including enrolled students, faculty, staff, parents, guardians, and alumni of The Morgan School.
+          </p>
+          <p>
+            <strong>Age Requirements &amp; Child Safety:</strong> There is <strong>no minimum age requirement</strong> to download and browse this application. All published articles, posts, and feed items are filtered, supervised, and moderated by Morgan School faculty to maintain a safe, school-appropriate environment suitable for students and viewers of all ages.
+          </p>
+          <p>
+            <strong>COPPA / Minor Protections:</strong> In compliance with the Children’s Online Privacy Protection Act (COPPA), the application does not sell personal information, profile students, or serve commercial third-party behavioral advertisements. Accounts created by minors must use valid school-issued email credentials (Clinton Public Schools) or be created with parental consent.
+          </p>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="terms-accounts" class="doc-section">
+          <h3 class="section-title"><span class="section-num">3.</span> User Accounts, Credentials &amp; Security</h3>
+          <p>
+            To access interactive features, users must register an account using a valid personal email address or a Clinton Public Schools school email.
+          </p>
+          <ul>
+            <li><strong>Account Information:</strong> Users agree to provide truthful display names and maintain accurate email details. Display names must adhere to school guidelines and range between 2 and 35 characters.</li>
+            <li><strong>Password Security:</strong> Passwords must contain at least six (6) characters. User passwords are cryptographically hashed and stored securely in a PostgreSQL database managed via Supabase infrastructure on Amazon Web Services (AWS). Passwords are never stored in plaintext.</li>
+            <li><strong>Electronic Communications:</strong> By registering, users agree to receive necessary service and transactional emails, including verification codes, password resets, and critical policy notices.</li>
+            <li><strong>Account Suspension &amp; Termination:</strong> If a user engages in unauthorized, abusive, or malicious activity, school administration reserves the authority to issue formal warnings, temporarily suspend, or permanently delete the account.</li>
+            <li><strong>Self-Service Account Deletion:</strong> Users may delete their account at any time directly within the application under <em>Settings &gt; Delete Account</em>. This immediately executes a server function to remove account records and personal data.</li>
+          </ul>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="terms-acceptable-use" class="doc-section">
+          <h3 class="section-title"><span class="section-num">4.</span> Acceptable Use Policy &amp; Prohibited Conduct</h3>
+          <p>
+            Users must treat the Morgan Newsletter platform with the same respect expected inside classrooms and on school grounds. Prohibited activities include:
+          </p>
+          <ul>
+            <li><strong>Data Harvesting &amp; Scraping:</strong> Any action to steal user data, harvest email addresses, or scrape content via automated scripts, bots, spiders, or unauthorized crawlers.</li>
+            <li><strong>Reverse Engineering &amp; AI Replication:</strong> Decompiling, reverse engineering, disassembling, probing, or utilizing artificial intelligence (AI) prompting/scraping tools to reconstruct, clone, or duplicate the app codebase or design.</li>
+            <li><strong>Hacking &amp; Interference:</strong> Attempting to bypass security mechanisms, perform SQL injection, probe server vulnerabilities, or disrupt infrastructure (Supabase/AWS).</li>
+            <li><strong>Harassment &amp; Inappropriate Content:</strong> Cyberbullying, defamation, harassment, impersonation of faculty or students, hate speech, vulgarity, sexually suggestive materials, or disseminating unverified rumors.</li>
+            <li><strong>Malicious Reporting:</strong> Submitting fraudulent bug reports, fake feature requests, or spamming the access request queue.</li>
+          </ul>
+          <div class="notice-box danger">
+            <strong>Enforcement:</strong> Violations of this Acceptable Use Policy will result in an immediate permanent ban, revocation of all access privileges, and where appropriate, referral to The Morgan School administrative disciplinary board and/or the Clinton Police Department.
+          </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="terms-ip" class="doc-section">
+          <h3 class="section-title"><span class="section-num">5.</span> Intellectual Property &amp; AI Restrictions</h3>
+          <p>
+            <strong>App Ownership:</strong> The Morgan Newsletter application, including all software code, interface design, graphical assets, branding, and databases, is the proprietary property of <strong>The Morgan School</strong> and the student development team.
+          </p>
+          <p>
+            <strong>Prohibition on AI Reverse Engineering:</strong> Users are strictly prohibited from utilizing automated decompilers, large language models (LLMs), or AI-assisted reverse-engineering tools to analyze, rip, recreate, or produce derivative works based on this application’s source code, layouts, or schemas.
+          </p>
+          <p>
+            <strong>Trademarks:</strong> The Morgan School name, mascot iconography, and Morgan Newsletter branding may not be used in connection with any third-party product or service without express written authorization.
+          </p>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="terms-ugc" class="doc-section">
+          <h3 class="section-title"><span class="section-num">6.</span> User-Generated Content (UGC)</h3>
+          <p>
+            Users who have received elevated posting privileges may author articles, submit sports score updates, publish images, and upload video highlights.
+          </p>
+          <ul>
+            <li><strong>Ownership Retained:</strong> Users retain intellectual property ownership of all original articles, photographs, and media they author and upload.</li>
+            <li><strong>Display License:</strong> By posting content on the app, you grant The Morgan School a non-exclusive, royalty-free, worldwide license to host, display, format, and broadcast that content within the application and related school community channels.</li>
+            <li><strong>Content Moderation:</strong> The Morgan School reserves the full right to review, edit, block, unpublish, or delete any user-generated content from being viewed if it is deemed inappropriate for all ages, offensive, inaccurate, or in conflict with Clinton Public Schools policies.</li>
+            <li><strong>No Commercial Sale:</strong> The Morgan School will <strong>never</strong> sell user-generated content, images, or articles, nor license them to third-party commercial platforms, without explicit written permission via email.</li>
+          </ul>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="terms-payments" class="doc-section">
+          <h3 class="section-title"><span class="section-num">7.</span> Payments, Fees &amp; Subscriptions</h3>
+          <p>
+            <strong>Free Educational Service:</strong> The Morgan Newsletter application is entirely free of charge. There are no fees, in-app purchases, paid features, subscriptions, or recurring billing cycles. No credit card or banking information is ever collected or processed.
+          </p>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="terms-liability" class="doc-section">
+          <h3 class="section-title"><span class="section-num">8.</span> Disclaimer &amp; Limitation of Liability</h3>
+          <p>
+            <strong>Provision of Service:</strong> The application is provided on an "as is" and "as available" basis for educational and community communication. While engineered to reliably support the school community, temporary service interruptions, network latency, software bugs, or unexpected data losses may occasionally occur.
+          </p>
+          <p>
+            <strong>Third-Party Cloud Infrastructure:</strong> Backend services and databases reside on third-party cloud infrastructure provided by <strong>Supabase</strong> and <strong>Amazon Web Services (AWS)</strong>. To the fullest extent permitted by applicable law, The Morgan School and the developers hold limited accountability for outages, data losses, or disruptions originating from upstream hosting providers.
+          </p>
+          <p>
+            <strong>Maintenance Diligence:</strong> The development team and Morgan Research Club commit to exercising reasonable diligence to monitor system health, patch reported bugs promptly, and restore operations whenever unexpected service interruptions take place.
+          </p>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="terms-changes" class="doc-section">
+          <h3 class="section-title"><span class="section-num">9.</span> Modifications to Terms &amp; Policies</h3>
+          <p>
+            The Morgan School reserves the authority to update or amend these Terms of Service and our Privacy Policy over time to reflect software enhancements or legal requirements.
+          </p>
+          <p>
+            <strong>Notification Procedure:</strong> When material modifications occur, registered users will be actively informed via:
+          </p>
+          <ol>
+            <li>A notice post or announcement banner displayed within the application; and</li>
+            <li>An email notice sent to registered email addresses on file.</li>
+          </ol>
+          <p>
+            Continued use of the application following the publication of revised Terms constitutes acceptance of the updated terms.
+          </p>
+        </section>
+
+        <!-- Section 10 -->
+        <section id="terms-governing-law" class="doc-section">
+          <h3 class="section-title"><span class="section-num">10.</span> Governing Law &amp; Jurisdiction</h3>
+          <p>
+            These Terms of Service and any dispute arising out of or relating to the Morgan Newsletter application shall be governed by and construed strictly in accordance with the laws of the <strong>State of Connecticut</strong> and the federal laws of the <strong>United States of America</strong>, without regard to conflict of law provisions.
+          </p>
+          <p>
+            Any formal legal proceeding relating to this application shall be brought exclusively in state or federal courts located in the State of Connecticut, USA.
+          </p>
+        </section>
+
+        <!-- Section 11 -->
+        <section id="terms-contact" class="doc-section">
+          <h3 class="section-title"><span class="section-num">11.</span> Contact Information &amp; Support</h3>
+          <p>
+            For questions, technical support, bug reports, or legal inquiries, please contact our administrative team:
+          </p>
+
+          <div class="contact-container">
+            <div class="contact-block">
+              <div class="contact-label">Support Email</div>
+              <div class="contact-value">
+                <a href="mailto:Hussainisyed2009@gmail.com">Hussainisyed2009@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-block">
+              <div class="contact-label">In-App Feedback</div>
+              <div class="contact-value">
+                Settings &gt; Report A Bug/Feature
+              </div>
+            </div>
+            <div class="contact-block">
+              <div class="contact-label">Institution &amp; Address</div>
+              <div class="contact-value">
+                The Morgan School<br>71 Killingworth Turnpike<br>Clinton, CT 06413
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- TAB 2: PRIVACY POLICY -->
+      <div id="pane-privacy" class="tab-pane">
+        <div class="doc-header">
+          <div class="doc-pretitle">The Morgan School • Data Protection</div>
+          <h2 class="doc-title">Privacy Policy</h2>
+          <div class="doc-meta">
+            <span><strong>Effective Date:</strong> October 25, 2026</span>
+            <span><strong>Build:</strong> Version 1.2.0 (Alpha)</span>
+            <span><strong>Location:</strong> Clinton, CT 06413</span>
+          </div>
+        </div>
+
+        <div class="executive-summary">
+          <h3>Overview</h3>
+          <p>
+            The Morgan Newsletter is a non-commercial school application built for The Morgan School in Clinton, Connecticut. We collect only what is strictly necessary to authenticate accounts, display school journalism, and report sports scores. We do not sell personal data, track users across third-party apps, or display commercial advertisements. Passwords are cryptographically hashed, and users have the self-service ability to edit their profile or permanently delete their account at any time.
+          </p>
+        </div>
+
+        <!-- Section 1 -->
+        <section id="priv-commitment" class="doc-section">
+          <h3 class="section-title"><span class="section-num">1.</span> Privacy Commitment</h3>
+          <p>
+            The Morgan School and the Morgan Research Club are committed to protecting the privacy, security, and digital safety of students, faculty, staff, alumni, and Clinton residents. This Privacy Policy outlines our transparent data practices regarding collection, storage, operational use, and deletion rights within the <strong>Morgan Newsletter</strong> mobile application (iOS &amp; Android).
+          </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="priv-data" class="doc-section">
+          <h3 class="section-title"><span class="section-num">2.</span> Information We Collect</h3>
+          <p>
+            We collect only information required to provide an authentic, safe, and functional school newsletter and athletic reporting experience.
+          </p>
+
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Data Elements</th>
+                  <th>Operational Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Account Information</strong></td>
+                  <td>Display name, email address (personal or school), cryptographically hashed password.</td>
+                  <td>Account creation, sign-in verification, password resets, and critical policy communications.</td>
+                </tr>
+                <tr>
+                  <td><strong>Profile Details</strong></td>
+                  <td>Optional profile avatar photo and optional biography text.</td>
+                  <td>Personalizing user profile presence within the school community.</td>
+                </tr>
+                <tr>
+                  <td><strong>User-Generated Content</strong></td>
+                  <td>Articles, text posts, comments, photos, video highlights, and athletic scores.</td>
+                  <td>Publishing school journalism and sports coverage (limited to authorized contributors).</td>
+                </tr>
+                <tr>
+                  <td><strong>Interactions &amp; Social</strong></td>
+                  <td>Likes given, followed student/team profiles, and in-app notifications.</td>
+                  <td>Delivering relevant updates, followers feeds, and engagement alerts.</td>
+                </tr>
+                <tr>
+                  <td><strong>Feedback &amp; Access Requests</strong></td>
+                  <td>Bug reproduction details, feature suggestions, access request reasons.</td>
+                  <td>Reviewing privilege elevation requests and troubleshooting app bugs.</td>
+                </tr>
+                <tr>
+                  <td><strong>Device &amp; Notification Tokens</strong></td>
+                  <td>Expo Push Notification Token, operating system type (iOS / Android).</td>
+                  <td>Delivering timely push alerts for sports scores, game results, and announcements (can be disabled anytime).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            <strong>Device Permissions Requested:</strong>
+          </p>
+          <ul>
+            <li><strong>Photo Library &amp; Camera (iOS <code>NSPhotoLibraryUsageDescription</code> &amp; Android permissions):</strong> The application only requests access to your photo library when you affirmatively select a profile picture or choose to attach media to an authorized article or post. Photos are never accessed without your direct action.</li>
+            <li><strong>Push Notifications:</strong> Requested at runtime to deliver alerts for athletic scores, game schedules, and announcements. Users can disable notifications at any time via device settings.</li>
+          </ul>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="priv-not-collected" class="doc-section">
+          <h3 class="section-title"><span class="section-num">3.</span> What We Do NOT Collect</h3>
+          <p>
+            Unlike commercial platforms, our non-profit educational focus ensures we do not collect intrusive personal data:
+          </p>
+          <ul>
+            <li><strong>No Continuous GPS Tracking:</strong> We do not track or log physical GPS location coordinates.</li>
+            <li><strong>No Third-Party Advertising Trackers:</strong> We do not integrate advertising SDKs, cross-app tracking identifiers (IDFA/GAID), or commercial behavioral tracking.</li>
+            <li><strong>No Financial Information:</strong> The application is 100% free with no in-app purchases or billing details collected.</li>
+            <li><strong>No Data Brokering:</strong> We never sell, rent, or trade student, faculty, or community data to commercial brokers or advertisers.</li>
+          </ul>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="priv-use" class="doc-section">
+          <h3 class="section-title"><span class="section-num">4.</span> How We Use Your Information</h3>
+          <p>We process collected data exclusively for school operational and communication purposes:</p>
+          <ol>
+            <li><strong>Authentication &amp; Security:</strong> To verify user identity, encrypt sign-in sessions, prevent spam accounts, and handle password resets.</li>
+            <li><strong>Content Delivery:</strong> To curate and broadcast athletic scores, student reporting, and event schedules.</li>
+            <li><strong>Administrative Communication:</strong> To dispatch password reset codes, security notices, and terms/policy updates.</li>
+            <li><strong>Push Alerts:</strong> To notify users of new scorecards, comments, or followers when opted-in.</li>
+            <li><strong>Community Safety:</strong> To ensure all submissions comply with school standards and maintain a safe digital environment for minors.</li>
+            <li><strong>Technical Maintenance:</strong> To diagnose errors submitted via the in-app "Report A Bug/Feature" tool.</li>
+          </ol>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="priv-security" class="doc-section">
+          <h3 class="section-title"><span class="section-num">5.</span> Cloud Storage, Encryption &amp; Security</h3>
+          <p>
+            We employ industry-standard security safeguards designed to protect community information:
+          </p>
+          <ul>
+            <li><strong>Cryptographically Hashed Passwords:</strong> Passwords are never stored in plaintext. They are encrypted using one-way cryptographic hashing algorithms (bcrypt/argon2 via Supabase GoTrue Auth) on server infrastructure.</li>
+            <li><strong>PostgreSQL Database:</strong> Records reside within PostgreSQL databases managed by Supabase and hosted within enterprise-grade <strong>Amazon Web Services (AWS)</strong> data centers.</li>
+            <li><strong>Encryption in Transit:</strong> All data transmitted between the mobile application and backend services is protected with Secure Sockets Layer / Transport Layer Security (SSL/TLS).</li>
+            <li><strong>Local Device Storage:</strong> Session tokens are saved locally in encrypted storage (<code>AsyncStorage</code>) to maintain secure sessions.</li>
+          </ul>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="priv-providers" class="doc-section">
+          <h3 class="section-title"><span class="section-num">6.</span> Third-Party Service Providers</h3>
+          <p>
+            We rely on reputable technical service providers to maintain backend infrastructure:
+          </p>
+          <ul>
+            <li><strong>Supabase Inc.:</strong> Provides database hosting (PostgreSQL), user authentication, serverless Edge Functions, and backend API infrastructure.</li>
+            <li><strong>Amazon Web Services (AWS):</strong> Provides physical cloud hosting and data center infrastructure hosting the Supabase clusters.</li>
+            <li><strong>Expo / EAS (650 Industries):</strong> Powers push notification delivery and the React Native mobile application framework.</li>
+          </ul>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="children" class="doc-section">
+          <h3 class="section-title"><span class="section-num">7.</span> Student &amp; Minor Privacy (COPPA Compliance)</h3>
+          <p>
+            Because The Morgan School educates students of all high school grade levels and serves Clinton, CT families, minor safety is our primary focus.
+          </p>
+          <p>
+            <strong>No Minimum Age for Safe Browsing:</strong> There is no age restriction to view the application because every public article, post, and score card is actively moderated and filtered by school faculty. The environment is kept strictly school-appropriate for all ages.
+          </p>
+          <p>
+            <strong>COPPA Compliance:</strong> The Morgan Newsletter complies with the Children’s Online Privacy Protection Act (COPPA). We do not collect student personal information for commercial profiling. Accounts created by minors must use valid school credentials or be authorized by parents/guardians.
+          </p>
+          <p>
+            <strong>Parental Rights:</strong> Parents and legal guardians may review, request deletion of, or refuse further collection of their child’s personal data by contacting our administrative team at <a href="mailto:Hussainisyed2009@gmail.com">Hussainisyed2009@gmail.com</a>.
+          </p>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="user-rights" class="doc-section">
+          <h3 class="section-title"><span class="section-num">8.</span> User Rights &amp; Self-Service Account Deletion</h3>
+          <p>
+            Users maintain full control over their account data:
+          </p>
+          <ul>
+            <li><strong>Profile Editing:</strong> Users may edit display names, biographies, and avatar photos at any time in <em>Profile &gt; Edit Profile</em>.</li>
+            <li><strong>Push Notifications:</strong> Push alerts can be toggled on or off at any moment in iOS or Android system settings.</li>
+            <li><strong>Self-Service Account Deletion:</strong> Any user can delete their account at any time directly in the app under <strong>Settings &gt; Delete Account</strong>. This immediately invokes a secure serverless Edge Function (<code>delete-user</code>) to permanently delete account credentials and profile records.</li>
+            <li><strong>Data Inquiries:</strong> Users may request a summary of data linked to their email by contacting support.</li>
+          </ul>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="updates" class="doc-section">
+          <h3 class="section-title"><span class="section-num">9.</span> Policy Modifications &amp; Notifications</h3>
+          <p>
+            We may update this Privacy Policy periodically to reflect new features or statutory requirements.
+          </p>
+          <p>
+            <strong>Notification Procedure:</strong> When material modifications occur, registered users will be notified via:
+          </p>
+          <ol>
+            <li>A notice post or announcement banner displayed within the application; and</li>
+            <li>An email notice sent to registered email addresses on file.</li>
+          </ol>
+          <p>
+            Continued use of the application following the publication of revised Privacy Policy terms constitutes acceptance of the changes.
+          </p>
+        </section>
+
+        <!-- Section 10 -->
+        <section id="priv-contact" class="doc-section">
+          <h3 class="section-title"><span class="section-num">10.</span> Contact &amp; Privacy Officer</h3>
+          <p>
+            For privacy inquiries, parent requests, or data protection reports, please contact our administrative team:
+          </p>
+
+          <div class="contact-container">
+            <div class="contact-block">
+              <div class="contact-label">Support Email</div>
+              <div class="contact-value">
+                <a href="mailto:Hussainisyed2009@gmail.com">Hussainisyed2009@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-block">
+              <div class="contact-label">In-App Feedback</div>
+              <div class="contact-value">
+                Settings &gt; Report A Bug/Feature
+              </div>
+            </div>
+            <div class="contact-block">
+              <div class="contact-label">Institution &amp; Address</div>
+              <div class="contact-value">
+                The Morgan School<br>71 Killingworth Turnpike<br>Clinton, CT 06413
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="javascript:switchTab('terms')">Terms of Service</a>
+      <span>•</span>
+      <a href="javascript:switchTab('privacy')">Privacy Policy</a>
+      <span>•</span>
+      <a href="terms.html">Standalone Terms</a>
+      <span>•</span>
+      <a href="privacy.html">Standalone Privacy</a>
+      <span>•</span>
+      <a href="mailto:Hussainisyed2009@gmail.com">Contact Support</a>
+    </div>
+    <p>&copy; 2026 The Morgan School &amp; Morgan Research Club • Clinton, CT 06413. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function switchTab(tab) {
+      const paneTerms = document.getElementById('pane-terms');
+      const panePrivacy = document.getElementById('pane-privacy');
+      const btnTerms = document.getElementById('btn-terms');
+      const btnPrivacy = document.getElementById('btn-privacy');
+      const btnBoth = document.getElementById('btn-both');
+      const navTerms = document.getElementById('sidebar-terms-nav');
+      const navPrivacy = document.getElementById('sidebar-privacy-nav');
+
+      btnTerms.classList.remove('active');
+      btnPrivacy.classList.remove('active');
+      btnBoth.classList.remove('active');
+
+      if (tab === 'privacy') {
+        paneTerms.classList.remove('active');
+        panePrivacy.classList.add('active');
+        btnPrivacy.classList.add('active');
+        navTerms.style.display = 'none';
+        navPrivacy.style.display = 'block';
+        window.location.hash = '#privacy';
+      } else if (tab === 'both') {
+        paneTerms.classList.add('active');
+        panePrivacy.classList.add('active');
+        btnBoth.classList.add('active');
+        navTerms.style.display = 'block';
+        navPrivacy.style.display = 'block';
+        window.location.hash = '#both';
+      } else {
+        paneTerms.classList.add('active');
+        panePrivacy.classList.remove('active');
+        btnTerms.classList.add('active');
+        navTerms.style.display = 'block';
+        navPrivacy.style.display = 'none';
+        window.location.hash = '#terms';
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.toLowerCase();
+      if (hash.includes('priv')) {
+        switchTab('privacy');
+      } else if (hash.includes('both')) {
+        switchTab('both');
+      } else {
+        switchTab('terms');
+      }
+    });
+
+    const toggleBtn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const savedTheme = localStorage.getItem('morgan_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        root.setAttribute('data-theme', 'dark');
+        toggleBtn.textContent = 'Light Mode';
+      } else {
+        root.removeAttribute('data-theme');
+        toggleBtn.textContent = 'Dark Mode';
+      }
+      localStorage.setItem('morgan_theme', theme);
+    }
+    
+    applyTheme(savedTheme);
+
+    toggleBtn.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    document.getElementById('printBtn').addEventListener('click', () => {
+      window.print();
+    });
+  </script>
+</body>
+</html>
